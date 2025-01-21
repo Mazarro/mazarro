@@ -1,0 +1,299 @@
+ * {
+    box-sizing: border-box;
+} 
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #0c1926;
+  overflow-x: hidden;
+}
+
+a {
+  position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit; /* Mantén el color del enlace original */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #89fee6;
+  transform: translateY(-3px);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: #bee0ff;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+h3 h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #bee0ff;
+  }
+
+header {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 250px;
+  background: #34495e;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px 0;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#menu {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  width: 250px;
+  height: auto;
+  background-color: #34495e;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#menu.show {
+  transform: translateX(0);
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  padding: 10px;
+}
+
+#menu ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+  color: #5a89b8;
+}
+
+.hamburger {
+  position: fixed;
+  width: 32px;
+  top: 70px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 1001;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: #2c3e50;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007fff;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-top:hover {
+  background: #34495e;
+}
+
+.section {
+  padding: 1rem;
+  margin: 1rem auto;
+  background: #2c3e50f5;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100px; /* Tamaño tipo carnet */
+  height: auto; /* Mantiene la proporción */
+  border: 2px solid #ccc; /* Marco atractivo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra atractiva */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Coloca el texto en columna */
+  justify-content: center; /* Centra verticalmente el texto */
+}
+
+.exp {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#contacto form {
+ width: 70%;
+}
+
+#contacto label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contacto input[type="email"], #contacto input[type="nombre"], section#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#contacto textarea {
+  height: 100px;
+}
+
+#contacto button[type="submit"] {
+  background-color: #0c1926;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#contacto button[type="submit"]:hover {
+   background-color: #3e8e41;
+}
+
+#contacto p {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+
+  body {
+        font-size: 18px;
+    }
+  
+  #menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    display: none;  /*Ocultar por defecto */
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+}
+
+  .hamburger {
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 30px;
+  }
+
+  .scroll-top {
+    bottom: 25px;
+    right: 5px;
+  }
+
+  .section{
+    margin: 1rem;
+  }
+
+  #contacto {
+    justify-content: flex-end;  
+    margin: 1rem;      
+}
+
+#contacto button[type="submit"] {
+    width: 100%;
+    font-size: 22px;
+
+}
+
+#menu.show {
+  display: block; /* Esto asegura que sea visible */
+  max-height: 500px; /* Ajusta según la altura máxima que necesites */
+}
