@@ -3,7 +3,7 @@
 } 
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -25,19 +25,19 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
 h2 {
   color: #bee0ff;
   text-decoration: underline;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
 h3 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #bee0ff;
   }
 
